@@ -51,8 +51,8 @@ jobs:
         id: build
         shell: cmd
         run: g++ -o first first.cpp&first.exe
-      - uses: actions/upload-artifact@v3
+      - name: Upload RPM as an artifact
+        uses: actions/upload-artifact@v2
         with:
-         name: my-artifact
-         path: D:/a/c-/
-
+             name: my-artifact
+             path: D:/a/c-/first.exe
