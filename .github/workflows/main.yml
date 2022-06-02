@@ -51,4 +51,8 @@ jobs:
         id: build
         shell: cmd
         run: g++ -o first first.cpp&first.exe
+      - uses: actions/upload-artifact@v3
+        with:
+         name: my-artifact
+         path: D:/a/c-/
 
