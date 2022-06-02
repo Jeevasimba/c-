@@ -50,5 +50,5 @@ jobs:
       - name: msvc-build
         id: build
         shell: cmd
-        run: gcc -o first first.cpp&first.exe
+        run: g++ -o first first.cpp&first.exe
 
